@@ -1,4 +1,4 @@
-FROM ajbisoft/debian8_lapp
+FROM ajbisoft/debian8_lapp:with_wkhtmltopdf
 MAINTAINER Jakub Kwiatkowski <jakub@ajbisoft.pl>
 RUN apt-get update && apt-get install -y php5-mssql \
   && apt-get -y --purge autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
