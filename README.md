@@ -1,11 +1,11 @@
-# Docker image: debian8_lamspp
+# Docker image: debian9_lamspp
 
 ## Description
 
-Official Debian 8 (debian:8) + apache2 + php5 + postgresql-client + php5-mssql docker image with some customization:
+Official Debian 9 (debian:9) + apache2 + php7.1 + postgresql-client + php7.1-mssql docker image with some customization:
 * mod_rewrite apache2 module enabled
 * DocumentRoot set to /var/www/public
-* /etc/apt/sources.list modified to include jessie-updates and to use Polish mirror by default
+* /etc/apt/sources.list modified to include stretch-updates and to use Ondřej Surý PHP 7.1 packages
 * WORKDIR set to /var/www/
 * ENTRYPOINT set to autostart apache2 service
 
@@ -18,7 +18,7 @@ There are two main run-time settings that may need to be passed to newly created
 ## Example
 
 To successfully start a new container using this image please specify port (here port 80) and volume options as in following example:
-`docker run -dp 80:80 -v <path_to_your_datadir>:/var/www/ --name <your-app-name> ajbisoft/debian8-lamspp`
+`docker run -dp 80:80 -v <path_to_your_datadir>:/var/www/ --name <your-app-name> ajbisoft/debian9-lamspp`
 
 ## Summary
 
