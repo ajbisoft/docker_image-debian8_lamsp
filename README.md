@@ -2,8 +2,9 @@
 
 ## Description
 
-Official Debian 9 (debian:9) + apache2 + php7.1 + postgresql-client + php7.1-mssql docker image with some customization:
+Official Debian 9 (debian:9) + apache2 + php7.1 + postgresql-client + php7.1-sybase + php7.1-mssql docker image with some customization:
 * version debian9_lamspp:with_wkhtmltopdf also has wkhtmltopdf package installed
+* MSSQL driver compiled from github.com/Microsoft/msphpsql
 * mod_rewrite apache2 module enabled
 * DocumentRoot set to /var/www/public
 * /etc/apt/sources.list modified to include stretch-updates and to use Ondřej Surý PHP 7.1 packages
