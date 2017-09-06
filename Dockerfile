@@ -1,6 +1,6 @@
 FROM ajbisoft/debian9_lapp
 MAINTAINER Jakub Kwiatkowski <jakub@ajbisoft.pl>
-RUN apt-get update && apt-get install -y unixodbc libgss3 odbcinst php7.1-sybase \
+RUN apt-get update && apt-get install -y unixodbc libgss3 odbcinst \
   && apt-get -y --purge autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
 COPY 20-pdo_sqlsrv.ini /etc/php/7.1/apache2/conf.d/
 COPY pdo_sqlsrv.so /usr/lib/php/20160303/ 
