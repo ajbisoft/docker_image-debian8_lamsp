@@ -1,4 +1,4 @@
-FROM ajbisoft/debian9_lapp
+FROM ajbisoft/debian9_lapp:with_wkhtmltopdf
 MAINTAINER Jakub Kwiatkowski <jakub@ajbisoft.pl>
 COPY msodbcsql-13.0.0.0.tar.gz /usr/local/src/
 COPY odbc_config /usr/local/bin/
